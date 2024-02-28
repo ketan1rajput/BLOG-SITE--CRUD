@@ -7,11 +7,7 @@ const app = express();
 const port = 3002;
 app.set('view engine', 'ejs');
 const Admin = require('./models/admin.js');
-const User = require('./models/user.js');
-const Blog = require('./models/blogs.js');
-var validateLogin = require('./validate/loginVal.js');
-var validateUser = require('./validate/userVal.js');
-const path = require('path');
+const User = require('./models/user.js')
 
 app.use(express.urlencoded({
     extended: true
